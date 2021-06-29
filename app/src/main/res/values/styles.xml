@@ -1,0 +1,26 @@
+<resources>
+  <!-- Base application theme. -->
+  <style name="BaseAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="actionOverflowButtonStyle">@style/OverflowMenu</item>
+
+    <!-- Fullscreen without ActionBar -->
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+
+    <!-- Open this if you want to make fullscreen without status bar -->
+    <!--<item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>-->
+  </style>
+
+  <style name="AppTheme" parent="BaseAppTheme" />
+
+  <style name="OverflowMenu" parent="android:style/Widget.Holo.ActionButton.Overflow">
+    <item name="android:src">@drawable/ic_more_horiz</item>
+    <item name="android:background">?attr/selectableItemBackground</item>
+  </style>
+
+</resources>
